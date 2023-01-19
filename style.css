@@ -89,19 +89,72 @@ nav ul li a {
 }
 
 .header-content h3 {
+    position: relative;
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: -2px;
     color: #FFFFFF;
+    z-index: 1;
+}
+
+.header-content h3::before {
+    content: "";
+    position: absolute;
+    width: 510px;
+    height: 537px;
+    left: -231px;
+    top: -116px;
+    background-image: url("images/Rectangle (3).png");
+    background-size: cover;
+}
+
+.header-content h3::after {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 907px;
+    left: 296px;
+    top: -250px;
+    background-image: url("images/Rectangle-2.png");
+    background-size: cover;
+    z-index: -1;
 }
 
 .header-content p {
+    position: relative;
     font-weight: 500;
     font-size: 18px;
     line-height: 42px;
     color: #FFFFFF;
     margin: 40px 0;
+    z-index: 1;
+}
+
+.header-content p::before {
+    content: "";
+    width: 526px;
+    height: 526px;
+    left: -220px;
+    top: 247px;
+    position: absolute;
+    /* background-color: #fff; */
+    background-image: url("images/Rectangle-4.png");
+    background-size: cover;
+    z-index: -1;
+}
+
+.header-content p::after {
+    content: "";
+    width: 480px;
+    height: 778px;
+    left: 777px;
+    top: -130px;
+    position: absolute;
+    /* background-color: #fff; */
+    background-image: url("images/Rectanglee.png");
+    background-size: cover;
+    z-index: -1;
 }
 
 .header-btn {
@@ -146,11 +199,11 @@ nav ul li a {
     opacity: 0.6;
 }
 
-.images{
-    margin-top: 8px;
+.images {
+    margin-top: 8signup-textpx;
 }
 
-.images img{
+.images img {
     margin-right: 10px;
 }
 
@@ -650,7 +703,7 @@ nav ul li a {
     line-height: 42px;
     letter-spacing: -1.5px;
     color: #FFFFFF;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .signup-boxes {
@@ -666,6 +719,7 @@ nav ul li a {
     padding: 20px;
     background-color: #2F5392;
     border-radius: 10px;
+    position: relative;
 }
 
 .signup-text h3 {
