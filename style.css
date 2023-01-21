@@ -13,11 +13,17 @@ img {
     max-width: 100%;
 }
 
+::after,
+::before {
+    max-width: 100%;
+}
+
 /*---------------------------- header -------------------*/
 .wrapper {
     /* max-width: 80%;
     margin: 0 auto; */
     background: linear-gradient(105.18deg, #1E3C72 -2.04%, #2A5298 107.42%);
+    border-radius: 0px 0px 200px 0px;
 }
 
 .header-wrapper {
@@ -185,6 +191,7 @@ nav ul li a {
     border-radius: 25px;
 }
 
+
 .sponsered {
     display: flex;
     gap: 20px;
@@ -210,6 +217,7 @@ nav ul li a {
 .header-img {
     max-width: 80%;
 }
+
 
 /* main */
 /* -----------------------first section--------------------------- */
@@ -490,6 +498,7 @@ nav ul li a {
 }
 
 .work-heading p {
+    position: relative;
     font-weight: 700;
     font-size: 14px;
     line-height: 40px;
@@ -497,6 +506,29 @@ nav ul li a {
     letter-spacing: 2.1px;
     text-transform: uppercase;
     opacity: 0.7;
+    z-index: 1;
+}
+
+.work-heading p::before {
+    content: " ";
+    position: absolute;
+    width: 550px;
+    height: 778px;
+    left: -548px;
+    top: 65px;
+    background-image: url("images/Rectangle\ 2.12.png");
+    z-index: -1;
+}
+
+.work-heading p::after {
+    content: " ";
+    position: absolute;
+    width: 526px;
+    height: 776px;
+    left: 0px;
+    top: -711px;
+    background-image: url(images/Rectangle444.png);
+    z-index: -1;
 }
 
 .work-heading h2 {
@@ -505,7 +537,32 @@ nav ul li a {
     line-height: 55px;
     letter-spacing: -1.5px;
     color: #FFFFFF;
+    position: relative;
+    z-index: 1;
 }
+
+.work-heading h2::before {
+    content: " ";
+    position: absolute;
+    width: 526px;
+    height: 351px;
+    left: 1200px;
+    top: -95px;
+    background-image: url("images/Rectangle (4).png");
+    z-index: -1;
+}
+
+.work-heading h2::after{
+    content: " ";
+    position: absolute;
+    width: 526px;
+    height: 351px;
+    left: 679px;
+    top: 258px;
+    background-image: url("images/Rectangle (5).png");
+    z-index: -1;
+}
+
 
 .work-content {
     display: flex;
@@ -686,6 +743,7 @@ nav ul li a {
 }
 
 .signup-content p {
+    position: relative;
     text-align: center;
     font-weight: 700;
     font-size: 14px;
@@ -694,9 +752,33 @@ nav ul li a {
     text-transform: uppercase;
     color: #FFFFFF;
     opacity: 0.7;
+    z-index: 1;
+}
+
+.signup-content p::before{
+    content: " ";
+    position: absolute;
+    width: 550px;
+    height: 778px;
+    left: -414px;
+    top: 288px;
+    background-image: url("images/Rectangle\ 2.12.png");
+    z-index: -1;
+}
+
+.signup-content p::after {
+    content: " ";
+    position: absolute;
+    width: 526px;
+    height: 824px;
+    left: 135px;
+    top: -534px;
+    background-image: url("images/Rectangle\ \(6\).png");
+    z-index: -1;
 }
 
 .signup-content h2 {
+    position: relative;
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -704,6 +786,29 @@ nav ul li a {
     letter-spacing: -1.5px;
     color: #FFFFFF;
     margin-bottom: 80px;
+    z-index: 1;
+}
+
+.signup-content h2::before{
+    content: " ";
+    position: absolute;
+    width: 526px;
+    height: 526px;
+    left: 1220px;
+    top: 130px;
+    background-image: url("images/Rectangle (4).png");
+    z-index: -1;
+}
+
+.signup-content h2::after{
+    content: " ";
+    position: absolute;
+    width: 526px;
+    height: 351px;
+    left: 696px;
+    top: 657px;
+    background-image: url("images/Rectangle (5).png");
+    z-index: -1;
 }
 
 .signup-boxes {
