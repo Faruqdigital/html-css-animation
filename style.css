@@ -9,21 +9,26 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+:root{
+    --background-color: #274D8F;
+}
+
 img {
     max-width: 100%;
 }
 
-::after,
-::before {
-    max-width: 100%;
-}
 
 /*---------------------------- header -------------------*/
 .wrapper {
     /* max-width: 80%;
     margin: 0 auto; */
-    background: linear-gradient(105.18deg, #1E3C72 -2.04%, #2A5298 107.42%);
+    /* background: linear-gradient(105.18deg, #1E3C72 -2.04%, #2A5298 107.42%); */
+    background-color: var(--background-color);
     border-radius: 0px 0px 200px 0px;
+}
+
+header{
+    background-image: url("images/banner-1.jpg");
 }
 
 .header-wrapper {
@@ -104,7 +109,7 @@ nav ul li a {
     z-index: 1;
 }
 
-.header-content h3::before {
+/* .header-content h3::before {
     content: "";
     position: absolute;
     width: 510px;
@@ -113,9 +118,9 @@ nav ul li a {
     top: -116px;
     background-image: url("images/Rectangle (3).png");
     background-size: cover;
-}
+} */
 
-.header-content h3::after {
+/* .header-content h3::after {
     content: "";
     position: absolute;
     width: 480px;
@@ -125,7 +130,7 @@ nav ul li a {
     background-image: url("images/Rectangle-2.png");
     background-size: cover;
     z-index: -1;
-}
+} */
 
 .header-content p {
     position: relative;
@@ -137,46 +142,34 @@ nav ul li a {
     z-index: 1;
 }
 
-.header-content p::before {
+/* .header-content p::before {
     content: "";
     width: 526px;
     height: 526px;
     left: -220px;
     top: 247px;
     position: absolute;
-    /* background-color: #fff; */
+    /* background-color: #fff;
     background-image: url("images/Rectangle-4.png");
     background-size: cover;
     z-index: -1;
-}
+} */ */
 
-.header-content p::after {
+/* .header-content p::after {
     content: "";
     width: 480px;
     height: 778px;
     left: 777px;
     top: -130px;
     position: absolute;
-    /* background-color: #fff; */
     background-image: url("images/Rectanglee.png");
     background-size: cover;
     z-index: -1;
-}
+} */
 
-.header-btn {
+.header-btn{
     display: flex;
     gap: 30px;
-}
-
-.play-btn {
-    display: flex;
-    gap: 5px;
-    color: white;
-    margin-top: 4px;
-}
-
-.play-btn .text {
-    margin-top: 2px;
 }
 
 .butn a {
@@ -189,6 +182,17 @@ nav ul li a {
     padding: 10px 20px;
     background-color: white;
     border-radius: 25px;
+}
+
+.play-btn {
+    display: flex;
+    gap: 5px;
+    color: white;
+    margin-top: 4px;
+}
+
+.play-btn .text {
+    margin-top: 2px;
 }
 
 
@@ -486,7 +490,7 @@ nav ul li a {
 /* ---------------------fifth section-------------------*/
 
 .fifth-container {
-    background-color: #1F3E76;
+    background-color: var(--background-color);
     margin-top: 80px;
     padding: 100px 0;
 }
@@ -738,7 +742,7 @@ nav ul li a {
 
 /* -----------------------eight-section----------------- -----*/
 .signup-section {
-    background-color: #21427D;
+    background-color: var(--background-color);
     padding: 80px;
 }
 
