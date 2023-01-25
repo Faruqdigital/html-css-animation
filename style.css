@@ -92,21 +92,24 @@ nav ul li a {
 
 .main-header {
     display: flex;
-    margin: 60px 0;
+    /* margin: 60px 0; */
+    padding-top: 80px;
 }
 
 .main-header>* {
     flex-basis: 100%;
 }
 
+.header-content{
+    margin-top: 60px;
+}
+
 .header-content h3 {
-    position: relative;
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: -2px;
     color: #FFFFFF;
-    z-index: 1;
 }
 
 /* .header-content h3::before {
@@ -167,6 +170,21 @@ nav ul li a {
     z-index: -1;
 } */
 
+
+
+
+.butn a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    color: #0F2137;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+
 .header-btn{
     display: flex;
     gap: 30px;
@@ -194,6 +212,7 @@ nav ul li a {
 .play-btn .text {
     margin-top: 2px;
 }
+
 
 
 .sponsered {
@@ -320,7 +339,7 @@ nav ul li a {
 }
 
 .feature-content {
-    margin-top: 120px;
+    margin-top: 130px;
 }
 
 .core-feature p {
