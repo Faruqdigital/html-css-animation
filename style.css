@@ -504,7 +504,7 @@ nav ul li a {
 }
 
 .fourth-features-img {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 30px;
 }
 
@@ -592,6 +592,7 @@ nav ul li a {
 
 .work-content {
     display: flex;
+    padding: 1rem;
     gap: 30px;
 }
 
@@ -621,6 +622,55 @@ nav ul li a {
     color: white;
     opacity: 0.65;
 }
+
+.work-card-1{
+    position: relative;
+}
+
+.work-card-1::before{
+    content: "";
+    top: -45px;
+    left: 69px;
+    width: 203px;
+    height: 44px;
+    background: url(/images/arrow.png) no-repeat;
+    position: absolute;
+    background-size: cover;
+    opacity: .5;
+}
+
+.work-card-2{
+    position: relative;
+}
+
+.work-card-2::before{
+    content: "";
+    top: -26px;
+    left: 69px;
+    width: 203px;
+    height: 44px;
+    background: url(/images/arrow\ \(1\).png) no-repeat;
+    position: absolute;
+    background-size: cover;
+    opacity: .5;
+}
+
+.work-card-3{
+    position: relative;
+}
+
+.work-card-3::before{
+    content: "";
+    top: -45px;
+    left: 69px;
+    width: 203px;
+    height: 44px;
+    background: url(/images/arrow.png) no-repeat;
+    position: absolute;
+    background-size: cover;
+    opacity: .5;
+}
+
 
 /* ---------------------------------sixth section------------------------------- */
 .client-satisfation {
